@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            width: 400px;
+            height: 400px;
+            color: floralwhite;
+            background-color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            position: relative;
+        }
+        .block::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: green;
+            top: 10%;
+        }
+        .block::after {
+            content:  '';
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: green;
+            bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Просто текст</div>
+</body>
+</html>

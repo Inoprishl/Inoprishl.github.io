@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover {
+            font-size: 3em;
+        }
+        input[type=text] {
+            background-color: chartreuse;
+        }
+        input[type=submit]:focus {
+            background-color: crimson;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:link {
+            color: dodgerblue;
+        }
+        .popup {
+            font-size: 2.25em;
+            display: inline-block;
+            padding: 1em;
+            color: honeydew;
+            position: relative;
+            border-radius: 5px;
+            background-color: indigo;
+        }
+        .popup:hover::after {
+            content: 'Вспывающее окно';
+            position: absolute;
+            padding: 1em;
+            top: 50%;
+            left:25%;
+            border-radius: 5px;
+            white-space: nowrap;
+            background-color: lawngreen;
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        psevdo
+    </h1>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="submit" value="Поиск">
+    </form>
+    <a href="active.html">yes</a>
+    <a href="not_active.html">no</a>
+    <div class="popup">Наведи на меня курсор</div>
+</body>
+</html>

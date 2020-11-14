@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           background-color: goldenrod;
+           width: 100%;
+           position: fixed; top: 0px; 
+        }
+        body {
+            width: 100%;
+            margin: 0;
+        }
+        .logo {
+            padding: 20px;
+            color: lawngreen;
+        }
+         a {
+            color: white;
+        }
+        #info1 {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: tomato;
+        }
+        #info2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: darkblue;
+        }
+        #info3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: darkgreen;
+        }
+        #home,#q,#about {
+            border: gold solid 5px;
+            border-radius: 5px;
+            padding: 5em;
+            transition: all ease 1s;
+        }
+        nav,#home,#q,#about {
+            font-weight: 600;
+            font-size: 25px;
+        }
+        #home:hover,#q:hover,#about:hover {
+            box-shadow: 4px 4px 0 0 goldenrod;
+            transform: translate(-4px, -4px);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            <a href="#info1" class="1">Home</a>
+            <a href="#info2" class="2">Questions</a>
+            <a href="#info3" class="3">About me</a>
+        </div>
+    </nav>
+    <div id="info1">
+        <div id="home">
+            <a href="../Homeworks/dance.html">Home👑</a>
+        </div>
+    </div>
+    <div id="info2">
+        <div id="q">
+            <a href="../Homeworks/dance.html">Questions</a>
+        </div>
+    </div>
+    <div id="info3">
+        <div id="about">
+            <a href="../Homeworks/dance.html">About me</a>
+        </div>
+    </div>
+</body>
+</html>

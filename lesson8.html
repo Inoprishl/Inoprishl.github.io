@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: cadetblue;
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        span {
+            color: chocolate;
+            font-family: 'Courier New', Courier, monospace;
+            position: sticky;
+        }
+        a {
+            color: white;
+        }
+        .d-1 {
+            height: 100vh;
+            width: 100vw;
+            background-color: yellowgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .d-2 {
+            display: flex;
+            background-color: tomato;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .d-3 {
+            display: flex;
+            background-color: violet;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .home, .questions, .about {
+            border: blue solid 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>Logo</span><div class="menu"><a class="h" href=".home">Home</a><a class="q" href=".questions">Questions</a><a class="a" href=".about">About me</a></div>
+    </nav>
+    <div class="d-1">
+        <a class="home" href=".h">Home</a>
+    </div>
+    <div class="d-2">
+        <a class="questions" href=".q">Questions</a>
+    </div>
+    <div class="d-3">
+        <a class="about" href=".a">About me</a>
+    </div>
+</body>
+</html>
