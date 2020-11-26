@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(95, 142, 228);
+        }
+        .load {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 4px solid rgb(91, 132, 209);
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: -10px -10px 15px rgb(6, 38, 97),
+                        10px 10px 10px rgba(26, 63, 138, 0.5),
+                        inset -10px -10px 15px rgb(8, 23, 49),
+                        inset 10px 10px 10px rgba(18, 41, 83, 0.5);
+            /* box-shadow: -10px -10px 15px rgb(59, 59, 59),
+                        10px 10px 10px rgba(214, 193, 193, 0.1),
+                        inset -10px -10px 15px rgba(51, 49, 49, 0.5),
+                        inset 10px 10px 10px rgba(0, 0, 0, 0.1); */
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(red, green, blue);
+            z-index: -1;
+            animation: loader .5s linear infinite;
+        }
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .load::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            right: 25px;
+            bottom: 25px;
+            background-color: rgb(111, 145, 209);
+            border-radius: 100%;
+            border: 4px solid rgb(91, 132, 209);
+            box-shadow: inset -10px -10px 15px rgb(91, 140, 224),
+                        inset 10px 10px 10px rgb(80, 140, 245);
+        }
+    </style>
+</head>
+<body>
+    <div class="load">
+        <span></span>
+    </div>
+</body>
+</html>
