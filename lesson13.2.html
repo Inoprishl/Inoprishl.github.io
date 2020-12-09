@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-1 {
+            background-image: url("img_parallax.jpg");
+            height: 100vh;
+        }
+        .bg-2 {
+            background-image: url("img_parallax2.jpg");
+            height: 100vh;
+        }
+        .bg-1,.bg-2 {
+            opacity: .95;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            margin: 0;
+        }
+        .border {
+            background-color: white;
+            padding: 1.25em;
+            font-size: 2em;
+            font-weight: 900;
+        }
+        div p {
+            padding: 1.75em 1em;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            font-size: 1.25em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-1">
+        <div class="cap">
+            <sppan class="border">Прокрути вниз</sppan>
+        </div>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, tenetur incidunt?
+        </p>
+    </div>
+    <div class="bg-2">
+        <div class="cap">
+            <span class="border">Это паралакс</span>
+        </div>
+    </div>
+</body>
+</html>
