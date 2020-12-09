@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+        }
+        .hello {
+            border-radius: 3px;
+            animation: hello 1s ease-in-out forwards;
+            margin-top: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes hello {
+            0% {
+                font-size: 1em;
+                background-color:  rgba(138, 31, 31, 0);
+                height: 1vh;
+                width: 1vw;
+            }
+            90% {
+                font-size: 2em;
+                background-color:  rgb(138, 31, 31);
+                height: 28vh;
+                width: 28vw;
+            }
+            100% {
+                height: 25vh;
+                width: 25vw;
+                background-color:  rgb(138, 31, 31);
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">
+        Привет мир!
+    </div>
+</body>
+</html>
