@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .el {
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0;
+            height: 10vh;
+        }
+        .el:nth-of-type(1) {
+            width: 20vw;
+            background-color: tomato;
+        }
+        .el:nth-of-type(2) {
+            width: 60vw;
+            background-color: olivedrab;
+        }
+        .el:nth-of-type(3) {
+            width: 20vw; 
+            background-color: midnightblue;
+        }
+        @media (max-width: 1500px) {
+            .el {
+                padding: 0 750px;
+            }
+            body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="el">left</div>
+    <div class="el">first</div>
+    <div class="el">right</div>
+</body>
+</html>
