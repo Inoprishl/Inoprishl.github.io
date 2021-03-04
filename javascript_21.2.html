@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt('Введите имя персонажа, и мы проверим, подходит ли оно вам.')
+        
+        if (name.lenght <= 11) {
+            alert('Это имя слишком длинное, попробуйте меньше, чем 11 символов')
+        } else if (name.lenght <= 2 && name.lenght != 0) {
+            alert('Оно слишком короткое, попробуйте ввести больше, чем 2 символа')
+        } else if (name.lenght >= 4 && name.lenght <= 6) {
+            alert(name + ' это имя идеально вам подходит!')
+        } else {
+            alert('Оно слишком длинное, попробуйте меньше, чем ' + name.lenght + ' символов')
+        }  
+    </script>
+</body>
+</html>
