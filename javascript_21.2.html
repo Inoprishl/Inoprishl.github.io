@@ -10,8 +10,8 @@
     <script>
         let name = prompt('Введите имя персонажа, и мы проверим, подходит ли оно вам.')
         
-        if (name.length <= 11) {
-            alert('Это имя слишком длинное, попробуйте меньше, чем 11 символов')
+        if (name.length === 0) {
+            alert('Вы не ввели имя!')
         } else if (name.length <= 2 && name.length != 0) {
             alert('Оно слишком короткое, попробуйте ввести больше, чем 2 символа')
         } else if (name.length >= 4 && name.length <= 6) {
