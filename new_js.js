@@ -1,0 +1,10 @@
+let tit = prompt('Введите заголовок')
+let titCol = prompt('Введите цвет заголовка')
+let pr = prompt('Введите текст параграфа')
+let prCol = prompt('Введите цвет параграфа')
+let ti = document.getElementsByClassName('ti')
+let par = document.getElementsByClassName('par')
+ti.textContent = tit
+ti.style.color = titCol
+par.textContent = pr
+par.style.color = prCol
