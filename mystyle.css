@@ -509,6 +509,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .body-wrapper .top .reccs .moreReccs-title:nth-child(odd) {
